@@ -8,10 +8,19 @@
 
     /* CSS HSL */
     --hunter-green: hsla(132, 29%, 31%, 1);
-    --asparagus: hsla(98, 32%, 45%, 1);
+    --asparagus: rgb(101, 157, 69);
     --yellow-green: hsla(78, 51%, 56%, 1);
     --parchment: hsla(43, 57%, 88%, 1);
     --bittersweet-shimmer: hsla(359, 47%, 51%, 1);
+
+    /* Variables from index.html */
+    --primary: 163 88% 20%;
+    --primary-foreground: 0 0% 100%;
+    --background: 152 81% 96%;
+    --foreground: 240 6% 10%;
+    --muted: 240 4% 46%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 6% 10%;
 }
 
 
@@ -29,19 +38,36 @@ header {
     padding: 1rem;
 }
 
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--hunter-green);
+  padding: 1rem;
+}
+
 nav ul {
-    list-style-type: none;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 1rem;
+  display: inline;
 }
 
 nav ul li a {
-    color: #ecf0f1;
-    text-decoration: none;
+  color: #ecf0f1;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: var(--asparagus);
+  border-radius: 4px;
 }
 
 main {
@@ -89,7 +115,7 @@ footer {
     justify-content: space-around;
 }
 
-.gallery img {
+gallery img {
     width: 150px;
     height: 150px;
     object-fit: cover;
