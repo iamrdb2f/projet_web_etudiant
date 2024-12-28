@@ -8,24 +8,37 @@
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/tailwind.css">
     <script src="../js/script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <h1>La Culture Gabonaise</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="culture.html">Culture</a></li>
-                <li><a href="gastronomie.html">Gastronomie</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container px-4 lg:px-0 mx-auto" data-section-type="navigation">
+        <div class="relative flex items-center justify-between w-full px-2 group py-9 shrink-0">
+            <div class="shrink-0">
+                <span class="font-bold border-radius-lg" data-component-type="logo"> SHADOW PROJECT </span>
+            </div>
+            <div class="items-center justify-between hidden gap-12 text-sm font-medium md:flex">
+                <a href="./pages/culture.html" class="rounded-none">Culture</a>
+                <a href="./pages/destinations.html" class="rounded-none">Destinations</a>
+                <a href="./pages/gastronomie.html" class="rounded-none">Gastronomie</a>
+            </div>
+            <a class="box-content hidden md:flex items-center px-4 py-2 text-sm font-bold border border-primary text-primary hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary transition duration-300 rounded-none"
+                href="./pages/contact.html">Contact</a>
+            <button onclick="(() => { this.closest('.group').classList.toggle('open')})()"
+                class="flex md:hidden rounded-none" href="/DEVELOPPEMENT WEB/Projet_web_2024/projet_web_etudiant_2024/index.html">Home</button>
+            <div
+                class="absolute flex md:hidden transition-all duration-300 ease-in-out flex-col items-start shadow-main justify-center w-full gap-3 overflow-hidden bg-white max-h-0 group-[.open]:py-4 px-4 rounded-md group-[.open]:max-h-64 top-full">
+                <a class="text-zinc-900 rounded-none" href="#services">Services</a>
+                <a class="text-zinc-900 rounded-none" href="#testimonials">Testimonials</a>
+                <a class="text-zinc-900 rounded-none" href="#contact">Contact</a>
+                <a class="box-content flex items-center px-4 py-2 text-sm font-bold border border-primary text-primary hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary transition duration-300 rounded-none"
+                    href="#contact"> Contact </a>
+            </div>
+        </div>
+    </div>
     <main>
         <h1>Culture du Gabon</h1>
 
@@ -37,10 +50,14 @@
             <img id="mainImage" src="/placeholder.svg?height=400&width=600" alt="Culture gabonaise" class="main-image">
         </div>
         <div class="gallery">
-            <img src="/placeholder.svg?height=150&width=150&text=Danse" alt="Danse traditionnelle">
-            <img src="/placeholder.svg?height=150&width=150&text=Musique" alt="Instruments de musique">
-            <img src="/placeholder.svg?height=150&width=150&text=Masques" alt="Masques traditionnels">
-            <img src="/placeholder.svg?height=150&width=150&text=Artisanat" alt="Artisanat local">
+            <img src="../images/cover_culture_gabon.jpg" alt="Culture gabonaise">
+            <img src="../images/cover_culture_gabon.jpg" alt="Culture gabonaise">
+            <img src="../images/cover_culture_gabon.jpg" alt="Culture gabonaise">
+            <img src="../images/cover_culture_gabon.jpg" alt="Culture gabonaise">
+            <a href="../images/cover_culture_gabon.jpg">
+            <img src="../images/cover_culture_gabon.jpg" alt="Culture gabonaise" class="main-image">
+            </a>
+        </div>
         </div>
     </main>
     <section class="py-5 carousel-fade">
@@ -106,7 +123,7 @@
                     <a href="javascript:;">
                         <div class="card card-background move-on-hover mb-4">
                             <div class="full-background"
-                                style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/glass-wall.jpg')">
+                                style="background-image: url('../images/glass-wall.jpg')">
                             </div>
                             <div class="card-body pt-12">
                                 <h4 class="text-white">Campus 6</h4>
@@ -119,7 +136,7 @@
                     <a href="javascript:;">
                         <div class="card card-background move-on-hover">
                             <div class="full-background"
-                                style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/vr.jpg')">
+                                style="background-image: url('../images/vr.jpg')">
                             </div>
                             <div class="card-body pt-12">
                                 <h4 class="text-white">Virtual Office</h4>
@@ -136,7 +153,7 @@
                     <a href="javascript:;">
                         <div class="card card-background move-on-hover mb-4">
                             <div class="full-background"
-                                style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/books.jpg')">
+                                style="background-image: url('../images/books.jpg')">
                             </div>
                             <div class="card-body pt-12">
                                 <h4 class="text-white">Cozy Spots</h4>
@@ -151,7 +168,7 @@
                     <a href="javascript:;">
                         <div class="card card-background move-on-hover">
                             <div class="full-background"
-                                style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/team-members.jpg')">
+                                style="background-image: url('../images/team-members.jpg')">
                             </div>
                             <div class="card-body pt-12">
                                 <h4 class="text-white">Co-working Spaces</h4>
@@ -166,7 +183,7 @@
                     <a href="javascript:;">
                         <div class="card move-on-hover carousel-fade card-background">
                             <div class="full-background"
-                                style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/window-desk.jpg')">
+                                style="background-image: url('../images/window-desk.jpg')">
                             </div>
                             <div class="card-body pt-12">
                                 <h4 class="text-white">Home Office</h4>
@@ -180,7 +197,7 @@
                     <a href="javascript:;">
                         <div class="card card-background move-on-hover">
                             <div class="full-background"
-                                style="background-image: url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/imac.jpg')">
+                                style="background-image: url('../images/imac.jpg')">
                             </div>
                             <div class="card-body pt-12">
                                 <h4 class="text-white">Private Space</h4>
@@ -209,29 +226,29 @@
             </div>
             <div class="row min-vh-25">
                 <div class="col-sm-4 col-5 mb-sm-0 mb-3">
-                    <div style="background-image: url('https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/nastuh.jpg')"
+                    <div style="background-image: url('../images/nastuh.jpg')"
                         class="w-100 h-100 border-radius-lg bg-cover"></div>
                 </div>
                 <div class="col-sm-3 col-7 mb-sm-0 mb-3">
-                    <div style="background-image: url('https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/card-3.jpg')"
+                    <div style="background-image: url('../images/card-3.jpg')"
                         class="w-100 h-100 border-radius-lg bg-cover"></div>
                 </div>
                 <div class="col-sm-5 mb-sm-0 mb-3">
-                    <div style="background-image: url('https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/card-2.jpg')"
+                    <div style="background-image: url('../images/card-2.jpg')"
                         class="w-100 h-100 border-radius-lg bg-cover"></div>
                 </div>
             </div>
             <div class="row min-vh-25 mt-4">
                 <div class="col-sm-3 col-7 mb-sm-0 mb-3">
-                    <div style="background-image: url('https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/meeting.jpg')"
+                    <div style="background-image: url('../images/meeting.jpg')"
                         class="w-100 h-100 border-radius-lg bg-cover"></div>
                 </div>
                 <div class="col-sm-5 col-5 mb-sm-0 mb-3">
-                    <div style="background-image: url('https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/anastasia.jpg')"
+                    <div style="background-image: url('../images/anastasia.jpg')"
                         class="w-100 h-100 border-radius-lg bg-cover"></div>
                 </div>
                 <div class="col-sm-4 mb-sm-0 mb-3">
-                    <div style="background-image: url('https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img/annie-spratt.jpg')"
+                    <div style="background-image: url('../images/annie-spratt.jpg')"
                         class="w-100 h-100 border-radius-lg bg-cover"></div>
                 </div>
             </div>
@@ -268,32 +285,32 @@
             <div class="row mt-4">
                 <div class="col-lg-2 col-md-4 col-6 mb-4">
                     <img class="w-100 opacity-9"
-                        src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img//logos/gray-logos/logo-coinbase.svg"
+                        src="../images/logo-coinbase.svg"
                         alt="logo">
                 </div>
                 <div class="col-lg-2 col-md-4 col-6 mb-4">
                     <img class="w-100 opacity-9"
-                        src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img//logos/gray-logos/logo-nasa.svg"
+                        src="../images/logo-nasa.svg"
                         alt="logo">
                 </div>
                 <div class="col-lg-2 col-md-4 col-6 mb-4">
                     <img class="w-100 opacity-9"
-                        src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img//logos/gray-logos/logo-netflix.svg"
+                        src="../images/logo-netflix.svg"
                         alt="logo">
                 </div>
                 <div class="col-lg-2 col-md-4 col-6 mb-4">
                     <img class="w-100 opacity-9"
-                        src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img//logos/gray-logos/logo-pinterest.svg"
+                        src="../images/logo-pinterest.svg"
                         alt="logo">
                 </div>
                 <div class="col-lg-2 col-md-4 col-6 mb-4">
                     <img class="w-100 opacity-9"
-                        src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img//logos/gray-logos/logo-spotify.svg"
+                        src="../images/logo-spotify.svg"
                         alt="logo">
                 </div>
                 <div class="col-lg-2 col-md-4 col-6 mb-4">
                     <img class="w-100 opacity-9"
-                        src="https://demos.creative-tim.com/soft-ui-design-system-pro/assets/img//logos/gray-logos/logo-vodafone.svg"
+                        src="../images/logo-vodafone.svg"
                         alt="logo">
                 </div>
             </div>
