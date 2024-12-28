@@ -1,36 +1,366 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Culture - Tourisme et Culture au Gabon</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/script.js" defer></script>
+    <meta name="description" content="Site web de tourisme et culture au Gabon">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:title" content="GABON LOOPLE 2">
+    <meta name="twitter:description" content="Website Description">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:url" content="">
+    <title>Accueil - Tourisme et Culture au Gabon</title>
+
+    <link rel="stylesheet" href="../css/tailwind.css" type="text/css">
+
+
+    <!-- Font family styles -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>La Culture Gabonaise</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="culture.html">Culture</a></li>
-                <li><a href="gastronomie.html">Gastronomie</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div id="gallery">
-            <img src="../images/danse.jpg" alt="Danse traditionnelle">
-            <div>
-                <img src="../images/artisanat.jpg" alt="Artisanat" class="thumbnail">
-                <img src="../images/musique.jpg" alt="Musique" class="thumbnail">
+    <div class="container px-4 lg:px-0 mx-auto" data-section-type="navigation">
+        <div class="relative flex items-center justify-between w-full px-2 group py-9 shrink-0">
+            <div class="shrink-0">
+                <span class="font-bold border-radius-lg" data-component-type="logo"> SHADOW PROJECT </span>
+            </div>
+            <div class="items-center justify-between hidden gap-12 text-sm font-medium md:flex">
+                <a href="./culture.html" class="rounded-none">Culture</a>
+                <a href="./destinations.html" class="rounded-none">Destinations</a>
+                <a href="./gastronomie.html" class="rounded-none">Gastronomie</a>
+            </div>
+            <a class="box-content hidden md:flex items-center px-4 py-2 text-sm font-bold border border-primary text-primary hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary transition duration-300 rounded-none"
+                href="./pages/contact.html">Contact</a>
+            <button onclick="(() => { this.closest('.group').classList.toggle('open')})()"
+                class="flex md:hidden rounded-none" href="/DEVELOPPEMENT WEB/Projet_web_2024/projet_web_etudiant_2024/index.html">Home</button>
+            <div
+                class="absolute flex md:hidden transition-all duration-300 ease-in-out flex-col items-start shadow-main justify-center w-full gap-3 overflow-hidden bg-white max-h-0 group-[.open]:py-4 px-4 rounded-md group-[.open]:max-h-64 top-full">
+                <a class="text-zinc-900 rounded-none" href="#services">Services</a>
+                <a class="text-zinc-900 rounded-none" href="#testimonials">Testimonials</a>
+                <a class="text-zinc-900 rounded-none" href="#contact">Contact</a>
+                <a class="box-content flex items-center px-4 py-2 text-sm font-bold border border-primary text-primary hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary transition duration-300 rounded-none"
+                    href="#contact"> Contact </a>
             </div>
         </div>
+    </div>
+    <main>
+        <h1>Culture du Gabon</h1>
+
+        <p>La culture gabonaise est riche et diverse, influencée par plus de 40 groupes ethniques. Les danses
+            traditionnelles, la musique et l'artisanat sont des éléments essentiels de cette culture vibrante.</p>
+
+        <h2>Galerie culturelle</h2>
+        <div id="mainImageContainer">
+            <img id="mainImage" src="/placeholder.svg?height=400&width=600" alt="Culture gabonaise" class="main-image">
+        </div>
+        <div class="gallery">
+            <img src="../images/cover_culture_gabon.jpg" alt="Culture gabonaise">
+            <img src="../images/cover_culture_gabon.jpg" alt="Culture gabonaise">
+            <img src="../images/cover_culture_gabon.jpg" alt="Culture gabonaise">
+            <img src="../images/cover_culture_gabon.jpg" alt="Culture gabonaise">
+            <a href="../images/cover_culture_gabon.jpg">
+            <img src="../images/cover_culture_gabon.jpg" alt="Culture gabonaise" class="main-image">
+            </a>
+        </div>
+        </div>
     </main>
+    <section class="py-5 carousel-fade">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="text-gradient text-primary mb-0 mt-2">Découvrez en plus sur le Gabon</h3>
+                    <h3>Un pays d'Afrique Centrale</h3>
+                    <p class="text-hide">Le Gabon est une terre de contrastes, où la nature règne en maître. Avec ses
+                        forêts
+                        luxuriantes, ses plages immaculées et sa faune exceptionnelle, ce pays est un joyau de
+                        biodiversité.
+                        Sa culture vibrante, portée par des traditions riches et un peuple chaleureux, raconte une
+                        histoire
+                        unique d’harmonie entre modernité et préservation.</p>
+                    <a href="javascript:;" class="text-primary icon-move-right text-sm-right text-success">En savoir
+                        plus&nbsp;<i class="fas fa-arrow-right text-sm ms-1"></i>
+                    </a>
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-5 ps-lg-0 ps-0">
+                    <div class="p-3 info-horizontal">
+                        <div class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center">
+                            <i class="fas fa-ship opacity-10"></i>
+                        </div>
+                        <div class="description ps-3">
+                            <p class="mb-0"><strong>Un patrimoine naturel exceptionnel.</strong><br>Avec 13 parcs
+                                nationaux,
+                                le Gabon abrite des écosystèmes uniques qui protègent éléphants, gorilles, et baleines.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="p-3 info-horizontal">
+                        <div class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center">
+                            <i class="fas fa-handshake opacity-10"></i>
+                        </div>
+                        <div class="description ps-3">
+                            <p class="mb-0"><strong>Une culture et des traditions authentiques.</strong><br>De la danse
+                                Bwiti aux masques Fang, l'art et les rituels reflètent l'âme d'un peuple fier de son
+                                héritage.</p>
+                        </div>
+                    </div>
+                    <div class="p-3 info-horizontal">
+                        <div class="icon icon-shape rounded-circle bg-gradient-primary shadow text-center">
+                            <i class="fas fa-hourglass opacity-10"></i>
+                        </div>
+                        <div class="description ps-3">
+                            <p class="mb-0"><strong>Un engagement pour la préservation.</strong><br>En préservant 11% de
+                                son
+                                territoire en parcs nationaux, le Gabon montre l'exemple en matière d'écotourisme.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features-3 py-5">
+        <div class="container">
+
+            <div class="row mt-5">
+                <div class="col-lg-4 mb-lg-0 mb-4">
+
+                    <a href="javascript:;">
+                        <div class="card card-background move-on-hover mb-4">
+                            <div class="full-background"
+                                style="background-image: url('../images/glass-wall.jpg')">
+                            </div>
+                            <div class="card-body pt-12">
+                                <h4 class="text-white">Campus 6</h4>
+                                <p>Website visitors today demand a frictionless user expericence.</p>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a href="javascript:;">
+                        <div class="card card-background move-on-hover">
+                            <div class="full-background"
+                                style="background-image: url('../images/vr.jpg')">
+                            </div>
+                            <div class="card-body pt-12">
+                                <h4 class="text-white">Virtual Office</h4>
+                                <p>If you’re more passionate about founding a business than the business itself, you can
+                                    fall into a ten year trap. Better to stay emotionally unattached and select the best
+                                    opportunity that arises. Applies to relationships too.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-lg-4 mb-lg-0 mb-4">
+
+                    <a href="javascript:;">
+                        <div class="card card-background move-on-hover mb-4">
+                            <div class="full-background"
+                                style="background-image: url('../images/books.jpg')">
+                            </div>
+                            <div class="card-body pt-12">
+                                <h4 class="text-white">Cozy Spots</h4>
+                                <p>If you’re more passionate about founding a business than the business itself, you can
+                                    fall into a ten year trap. Better to stay emotionally unattached and select the best
+                                    opportunity that arises. Applies to relationships too.</p>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a href="javascript:;">
+                        <div class="card card-background move-on-hover">
+                            <div class="full-background"
+                                style="background-image: url('../images/team-members.jpg')">
+                            </div>
+                            <div class="card-body pt-12">
+                                <h4 class="text-white">Co-working Spaces</h4>
+                                <p>Smart money is just dumb money that’s been through a crash.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="col-lg-4">
+
+                    <a href="javascript:;">
+                        <div class="card move-on-hover carousel-fade card-background">
+                            <div class="full-background"
+                                style="background-image: url('../images/window-desk.jpg')">
+                            </div>
+                            <div class="card-body pt-12">
+                                <h4 class="text-white">Home Office</h4>
+                                <p>Website visitors today demand a frictionless user expericence — especially when using
+                                    search. Because of the hight standards.</p>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a href="javascript:;">
+                        <div class="card card-background move-on-hover">
+                            <div class="full-background"
+                                style="background-image: url('../images/imac.jpg')">
+                            </div>
+                            <div class="card-body pt-12">
+                                <h4 class="text-white">Private Space</h4>
+                                <p>Technology is not only the thing that moves the human race forward, but it’s the only
+                                    thing that ever has. Without technology, we’re just monkeys playing in the dirt.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 mx-auto text-center mb-5">
+                    <span class="badge rounded-pill bg-primary mb-2">Co-working</span>
+                    <h2>Visitez les lieux prisés</h2>
+                    <p>
+                        If you can’t decide, the answer is no. If two equally difficult paths,
+                        choose the one more painful in the short term (pain avoidance
+                        is creating an illusion of equality).
+                    </p>
+                </div>
+            </div>
+            <div class="row min-vh-25">
+                <div class="col-sm-4 col-5 mb-sm-0 mb-3">
+                    <div style="background-image: url('../images/nastuh.jpg')"
+                        class="w-100 h-100 border-radius-lg bg-cover"></div>
+                </div>
+                <div class="col-sm-3 col-7 mb-sm-0 mb-3">
+                    <div style="background-image: url('../images/card-3.jpg')"
+                        class="w-100 h-100 border-radius-lg bg-cover"></div>
+                </div>
+                <div class="col-sm-5 mb-sm-0 mb-3">
+                    <div style="background-image: url('../images/card-2.jpg')"
+                        class="w-100 h-100 border-radius-lg bg-cover"></div>
+                </div>
+            </div>
+            <div class="row min-vh-25 mt-4">
+                <div class="col-sm-3 col-7 mb-sm-0 mb-3">
+                    <div style="background-image: url('../images/meeting.jpg')"
+                        class="w-100 h-100 border-radius-lg bg-cover"></div>
+                </div>
+                <div class="col-sm-5 col-5 mb-sm-0 mb-3">
+                    <div style="background-image: url('../images/anastasia.jpg')"
+                        class="w-100 h-100 border-radius-lg bg-cover"></div>
+                </div>
+                <div class="col-sm-4 mb-sm-0 mb-3">
+                    <div style="background-image: url('../images/annie-spratt.jpg')"
+                        class="w-100 h-100 border-radius-lg bg-cover"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-3">
+                <div class="col-md-3">
+                    <h1 class="text-gradient text-primary">Libreville </h1>
+                    <h5 class="mt-3">Capitale </h5>
+                    <p>Of “high-performing” level are led by a certified project manager</p>
+                </div>
+                <div class="col-md-3">
+                    <h1 class="text-gradient text-primary">+ 2,4 M</h1>
+                    <h5 class="mt-3">Population</h5>
+                    <p>That meets quality standards required by our users</p>
+                </div>
+                <div class="col-md-3">
+                    <h1 class="text-gradient text-primary">La Concorde</h1>
+                    <h5 class="mt-3">Hymne National</h5>
+                    <p>Actively engage team members that finishes on time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 mx-auto text-center">
+                    <h6 class="opacity-5"> Les compagnies du Gabon</h6>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <img class="w-100 opacity-9"
+                        src="../images/logo-coinbase.svg"
+                        alt="logo">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <img class="w-100 opacity-9"
+                        src="../images/logo-nasa.svg"
+                        alt="logo">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <img class="w-100 opacity-9"
+                        src="../images/logo-netflix.svg"
+                        alt="logo">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <img class="w-100 opacity-9"
+                        src="../images/logo-pinterest.svg"
+                        alt="logo">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <img class="w-100 opacity-9"
+                        src="../images/logo-spotify.svg"
+                        alt="logo">
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <img class="w-100 opacity-9"
+                        src="../images/logo-vodafone.svg"
+                        alt="logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4 class="mb-1">Socials<div><br></div>
+                    </h4>
+                    <p class="lead mb-0">Delivering the best products</p>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center">
+                    <a href="javascript:;" class="btn btn-twitter mb-0 me-2">
+                        <i class="fab fa-twitter me-1"></i> Twitter
+                    </a>
+                    <a href="javascript:;" class="btn btn-facebook mb-0 me-2">
+                        <i class="fab fa-facebook-square me-1"></i> Facebook
+                    </a>
+                    <a href="javascript:;" class="mb-0 me-2 btn-outline-primary btn">
+                        <i class="fab fa-tumblr me-1"></i> Tumblr
+                    </a>
+                    <a href="javascript:;" class="btn btn-dribbble mb-0 btn-outline-dark btn-dark">
+                        <i class="fab fa-dribbble me-1"></i> Dribbble
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="backToTop" title="Retour en haut">↑</button>
+
     <footer>
         <p>&copy; 2025 Tourisme et Culture au Gabon</p>
     </footer>
 </body>
+
 </html>

@@ -7,18 +7,30 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <h1>La Gastronomie Gabonaise</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="culture.html">Culture</a></li>
-                <li><a href="gastronomie.html">Gastronomie</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container px-4 lg:px-0 mx-auto" data-section-type="navigation">
+        <div class="relative flex items-center justify-between w-full px-2 group py-9 shrink-0">
+            <div class="shrink-0">
+                <span class="font-bold border-radius-lg" data-component-type="logo"> SHADOW PROJECT </span>
+            </div>
+            <div class="items-center justify-between hidden gap-12 text-sm font-medium md:flex">
+                <a href="./pages/culture.html" class="rounded-none">Culture</a>
+                <a href="./pages/destinations.html" class="rounded-none">Destinations</a>
+                <a href="./pages/gastronomie.html" class="rounded-none">Gastronomie</a>
+            </div>
+            <a class="box-content hidden md:flex items-center px-4 py-2 text-sm font-bold border border-primary text-primary hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary transition duration-300 rounded-none"
+                href="./pages/contact.html">Contact</a>
+            <button onclick="(() => { this.closest('.group').classList.toggle('open')})()"
+                class="flex md:hidden rounded-none" href="#home">Home</button>
+            <div
+                class="absolute flex md:hidden transition-all duration-300 ease-in-out flex-col items-start shadow-main justify-center w-full gap-3 overflow-hidden bg-white max-h-0 group-[.open]:py-4 px-4 rounded-md group-[.open]:max-h-64 top-full">
+                <a class="text-zinc-900 rounded-none" href="#services">Services</a>
+                <a class="text-zinc-900 rounded-none" href="#testimonials">Testimonials</a>
+                <a class="text-zinc-900 rounded-none" href="#contact">Contact</a>
+                <a class="box-content flex items-center px-4 py-2 text-sm font-bold border border-primary text-primary hover:bg-primary hover:text-white focus:ring-4 focus:ring-primary transition duration-300 rounded-none"
+                    href="#contact"> Contact </a>
+            </div>
+        </div>
+    </div>
     <main>
         <article>
             <h2>Nyembwe</h2>
